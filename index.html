@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notizia sulla scuola</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    #jumpscare-video {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: black;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ultime notizie dalla scuola</h1>
+  <p>Oggi è stato annunciato un importante cambiamento nel calendario scolastico: da settembre le lezioni inizieranno alle 8:30 anziché alle 8:00.</p>
+
+  <video id="jumpscare-video" src="jumpscare.mp4" preload="auto" playsinline></video>
+
+  <script>
+    setTimeout(() => {
+      const video = document.getElementById('jumpscare-video');
+      video.style.display = 'block';
+      video.play();
+    }, 5000);
+  </script>
+
+</body>
+</html>
